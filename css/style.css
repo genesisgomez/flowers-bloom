@@ -12,20 +12,23 @@ html {
 }
 body{
   background-color:papayawhip;
-  max-width:950px;
   width:100%;
   margin-left:auto;
   margin-right:auto;
 }
+header{
+  display:flex;
+  min-height:100px;
+}
 header img{
-  float:left;
-  margin: 5px 10px;
+  align-self:center;
+  padding:0 10px;
 }
 h1{
   font-family:fantasy;
   font-weight:bold;
   background-color:papayawhip;
-  padding: 20px 0;
+  padding: 10px;
   font-size:48px;
   color:mediumvioletred;
 }
@@ -40,14 +43,21 @@ nav ul{
   justify-content:center;
 }
 nav ul a{
+  text-decoration:none;
   color:purple;
   font-family:sans-serif;
   display:block;
-  padding:20px;
+  padding:20px 35px;
   transition:background-color .5s;
 }
 nav ul a:hover{
   background-color:peachpuff;
+}
+nav{
+	position:sticky;
+	top:0;
+  background-color:rgba(255,192,203,.9);
+	box-shadow:1px 2px 3px purple;
 }
 header+div{
   min-height:250px;
@@ -62,12 +72,20 @@ h2{
   text-align:center;
   font-size:48px;
 }
-.col{
-  display:flex;
-  justify-content:center;
+section{
+  max-width:1280px;
+  margin:0 auto;
 }
-.col div{
+section:nth-child(5){
+  display:flex;
+  text-wrap:wrap;
+}
+section:nth-child(5) img{
+  padding:20px;
+}
+section:nth-child(5)div{
   flex:1;
+  padding: 0 20px;
 }
 footer{
   background-color:tan;
@@ -76,4 +94,18 @@ footer{
 }
 p{
   padding:15px;
+}
+@media screen and (max-width:480px){
+  nav ul{
+    flex-direction:column;
+    text-align:center;
+  }
+}
+@media screen and (max-width:768px){
+  section:nth-child(5){
+    flex-direction:column;
+  }
+  nav ul{
+    text-align:center;
+  }
 }
