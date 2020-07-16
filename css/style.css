@@ -68,7 +68,7 @@ header+div{
 h2{
   font-family:monospace;
   color:purple;
-  margin:20px 0;
+  margin:20px 0 5px 0;
   text-align:center;
   font-size:48px;
 }
@@ -108,4 +108,49 @@ p{
   nav ul{
     text-align:center;
   }
+}
+span{
+  font-size:20px;
+  text-align:center;
+  color:mediumvioletred;
+  display:block;
+}
+main{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+main div{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+button{
+  background-color:royalblue;
+  padding:15px 5px;
+  color:white;
+  border:none;
+  margin-top:15px;
+  margin-bottom:15px;
+}
+.modal_off{
+  display:none;
+}
+.modal_on{
+  display:block;
+  position:fixed;
+  top:0;
+  bottom:0;
+  background-color:rgba(0,0,0,.8);
+  padding:50px;
+}
+.modal_on div{
+  background-color:lightcyan;
+  text-align:center;
+  padding:25px;
+}
+h3{
+  font-size:20px;
 }

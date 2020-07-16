@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* print css document */
+
+img{
+  display:none;
+}
+header{
+  background-color:transparent;
+  color:black;
+}
+h1,h2,h3 {
+	color:black;
+}
+
+button{
+  display:none;
+}
+footer{
+  background-color:transparent;
+  color:black;
+}
+nav ul a{
+  color:black;
+}
+nav{
+  box-shadow:1px 2px 3px black;
+}
+span{
+  color:black;
+}
